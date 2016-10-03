@@ -6,5 +6,6 @@
 # JetBrains:
 .idea/
 
-
-
+# Node and Typings
+angular-quickstart/node_modules/
+angular-quickstart/typings/
