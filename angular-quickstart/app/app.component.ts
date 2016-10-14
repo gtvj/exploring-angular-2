@@ -1,6 +1,11 @@
 // Import the Component decorator from @angular/core
 import { Component } from '@angular/core';
 
+export class Hero {
+    id: number;
+    name: string;
+}
+
 // Decorate the AppComponent class with the Component decorator
 // This example has the effect of:
 //      1.  Marking AppComponent as an Angular Component
@@ -9,11 +14,19 @@ import { Component } from '@angular/core';
 //      3.  Setting a CSS selector that identifies this component in the view
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular App</h1>'
-})
+    template: `
+          <h1>{{title}}</h1>
+          <h2>{{hero.name}} details!</h2>
+          <div><label>id: </label>{{hero.id}}</div>
+          <div><label>name: </label>{{hero.name}}</div>
+  `})
 
 // Define the AppComponent Class
 // Note: this is exported so that we can use the component in our application
 export class AppComponent {
-
+    title = 'Tour of heroes';
+    hero: Hero = {
+        id: 1,
+        name: 'Windstorm'
+    };
 }

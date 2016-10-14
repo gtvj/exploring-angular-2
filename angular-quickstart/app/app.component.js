@@ -10,6 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 // Import the Component decorator from @angular/core
 var core_1 = require('@angular/core');
+var Hero = (function () {
+    function Hero() {
+    }
+    return Hero;
+}());
+exports.Hero = Hero;
 // Decorate the AppComponent class with the Component decorator
 // This example has the effect of:
 //      1.  Marking AppComponent as an Angular Component
@@ -18,12 +24,16 @@ var core_1 = require('@angular/core');
 //      3.  Setting a CSS selector that identifies this component in the view
 var AppComponent = (function () {
     function AppComponent() {
+        this.title = 'Tour of heroes';
+        this.hero = {
+            id: 1,
+            name: 'Windstorm'
+        };
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>My First Angular App</h1>'
-        }), 
+            template: "\n          <h1>{{title}}</h1>\n          <h2>{{hero.name}} details!</h2>\n          <div><label>id: </label>{{hero.id}}</div>\n          <div><label>name: </label>{{hero.name}}</div>\n  " }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
