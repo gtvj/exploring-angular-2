@@ -1,5 +1,6 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
 
 // Importing our AppComponent class
 import { AppComponent } from './app.component';
@@ -12,7 +13,10 @@ import { AppComponent } from './app.component';
 // The 'bootstrap' property tells Angular 2 what the 'root' module is
 // The 'declarations' property declares the directives and components
 @NgModule({
-    imports: [ BrowserModule ],
+    imports: [
+        BrowserModule,
+        FormsModule
+    ],
     declarations: [ AppComponent ],
     bootstrap: [ AppComponent ]
 })
