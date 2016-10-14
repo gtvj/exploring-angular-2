@@ -8,30 +8,23 @@ Key points and related links are provided in the 'Notes' section below
 
 ## Notes
 
-### Week 1
+### Week 4 - Tour of Heroes (continued)
 
-#### TypeScript
+### Week 3 - Tour of Heroes
 
-Angular 2 source code is written in [Typescript](https://www.typescriptlang.org/). By using Typescript to write our Angular 2 code we are able to use ES2015 now, including: 
+This week we began the ['Tour of Heroes'](https://angular.io/docs/ts/latest/tutorial/) tutorial. This introduced several concepts, including: 
 
-* Classes
-* Modules
-* Strong typing
-* Decorators
+* Multi-line template strings (an ES6 feature)
+* One-way data binding within a template to a class attribute `{{ }}`
+* Two-way data binding:
+    * via the *built-in directive* `ngModel` from the `FormsModule` 
+    * that we needed to import `FormsModule` in `app.module.ts` to make use of it
+* That `*ngFor` allows us to iterate over an array accessing each index
+* That the `styles` property on `@Component` allows us to specify styles for our component and that *regardless of the rules we apply, they will only affect our component*
 
-#### Angular overview
+#### Related concepts
 
-* Components
-    * The 'bootstrap' component
-    * Each component can have an HTML template to which you can wire up:
-        * Events
-        * Data
-    * Nesting components
-    * Created using the Component class
-    
-#### Task - Angular 2 Quick Start
-
-Create your own repositories and follow steps 1 to 6 of the [Angular 2 quick start](https://angular.io/docs/ts/latest/quickstart.html)
+* The templates used this week make use of [ES6 Template Literals](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Template_literals). @gtvj wrote a [short introduction to these](http://15volts.com/2016/10/11/simple-template-literals/) in preparation for the session today
 
 ### Week 2 
 
@@ -99,3 +92,28 @@ At the current time, no browser supports ES2015 modules and - despite [TypeScrip
 #### Task - week 2 
 
 Create a second component within the app which shows a paragraph of text.
+
+### Week 1
+
+#### TypeScript
+
+Angular 2 source code is written in [Typescript](https://www.typescriptlang.org/). By using Typescript to write our Angular 2 code we are able to use ES2015 now, including: 
+
+* Classes
+* Modules
+* Strong typing
+* Decorators
+
+#### Angular overview
+
+* Components
+    * The 'bootstrap' component
+    * Each component can have an HTML template to which you can wire up:
+        * Events
+        * Data
+    * Nesting components
+    * Created using the Component class
+    
+#### Task - Angular 2 Quick Start
+
+Create your own repositories and follow steps 1 to 6 of the [Angular 2 quick start](https://angular.io/docs/ts/latest/quickstart.html)
