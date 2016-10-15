@@ -22,6 +22,10 @@ This week we began the ['Tour of Heroes'](https://angular.io/docs/ts/latest/tuto
 * That `*ngFor` allows us to iterate over an array accessing each index
 * That the `styles` property on `@Component` allows us to specify styles for our component and that *regardless of the rules we apply, they will only affect our component*
 
+Here's a diagram of how the app is currently structured ![Diagram of structure](images/diagram.png)
+
+And here's a diagram of our component ![Diagram of component](images/component-diagram.png)
+
 #### Related concepts
 
 * The templates used this week make use of [ES6 Template Literals](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Template_literals). @gtvj wrote a [short introduction to these](http://15volts.com/2016/10/11/simple-template-literals/) in preparation for the session today
