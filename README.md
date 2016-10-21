@@ -8,7 +8,16 @@ Key points and related links are provided in the 'Notes' section below
 
 ## Notes
 
+### Week 5 - Exploring structural directives and continuing Tour of Heroes
+
 ### Week 4 - Tour of Heroes (continued)
+
+This week we continued the Tour of Heroes tutorial which introduced a couple of concepts, including: 
+
+* How to bind a click event to a component method and pass in the current index of an `*ngFor` using `(click)="onSelect(hero)"`
+* `*ngIf` and the concept of [structural directives](https://angular.io/docs/ts/latest/guide/structural-directives.html) in Angular 2
+* How you can set a HTML class attribute within a template and link it to a component value using `[class.selected]="hero === selectedHero"`
+
 
 ### Week 3 - Tour of Heroes
 
