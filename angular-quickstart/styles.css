@@ -11,6 +11,14 @@ h2, h3 {
     font-weight: lighter;
 }
 
+p {
+    margin-top: 1em!important;
+}
+
 body {
     margin: 2em;
+}
+
+button {
+    margin: 10px 5px 0 0!important;
 }

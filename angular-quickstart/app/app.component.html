@@ -1,0 +1,17 @@
+<h1>{{ league.name }}</h1>
+
+<div class="input-group">
+    <span class="input-group-addon" id="basic-addon3">Search for a club in {{ league.name }}</span>
+    <input type="text" [(ngModel)]="search_term" class="form-control" id="search" aria-describedby="basic-addon3">
+</div>
+
+<p *ngIf="search_term">Clubs matching
+    <mark>{{search_term}}</mark>
+    are highlight below
+</p>
+
+<button class="btn" [class.btn-primary]="club_is_matched(club)" type="button" *ngFor="let club of league.clubs">
+    {{ club.name }}
+</button>
+
+

@@ -14,7 +14,7 @@ Key points and related links are provided in the 'Notes' section below
 
 Angular 2 source code is written in [Typescript](https://www.typescriptlang.org/). By using Typescript to write our Angular 2 code we are able to use ES2015 now, including: 
 
-* Classes
+* Classesnpm star
 * Modules
 * Strong typing
 * Decorators
