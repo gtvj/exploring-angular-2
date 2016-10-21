@@ -10,6 +10,11 @@ Key points and related links are provided in the 'Notes' section below
 
 ### Week 5 - Exploring structural directives and continuing Tour of Heroes
 
+@gtvj has created a [branch](https://github.com/gtvj/exploring-angular-2/tree/structural-directives-do-not-delete) demonstrating the structural directives `*ngFor` and `*ngIf` using some football data. This also uses a component method
+to manipulate the DOM.
+
+![Football app image](images/football.png)
+
 ### Week 4 - Tour of Heroes (continued)
 
 This week we continued the Tour of Heroes tutorial which introduced a couple of concepts, including: 
